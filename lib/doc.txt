@@ -1,0 +1,22 @@
+Como usar:
+  import lib.util as util
+
+  util.#NOME DA FUNÇÃO#
+
+clear() --> Limpa a tela
+
+cabecalho(titulo, historico) --> Imprime um cabeçalho
+  titulo --> Uma string --> O titulo do cabeçalho
+  historico --> Uma lista de strings --> Exibe um histórico das telas navegadas, com o último elemento sendo o atual. Se não quiser exibir, passe uma lista com um único elemento vazio (ex.: [''])
+
+carregar_arquivo(nome, modo) --> Função utilitária pra carregar um arquivo
+  nome --> Uma String --> O nome do arquivo
+  modo --> Uma String --> O modo de abertura do arquivo ('w', 'a', 'r')
+  Retorna o arquivo carregado
+
+carregar_temas() --> Função utilitária pra carregar a lista de temas
+  Retorna uma lista com os temas cadastrados
+
+carregar_palavras(tema) --> Função utilitária pra carregar a lista de palavras de um dado tema
+  tema --> Uma String --> O Nome do tema
+  Retorna uma lista com as palavras daquele tema
